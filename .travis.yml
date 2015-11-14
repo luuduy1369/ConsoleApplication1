@@ -1,9 +1,0 @@
-language: csharp
-solution: ConsoleApplication1.sln
-install:
-– nuget restore ConsoleApplication1.sln
-– nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
-script:
-– xbuild /p:Configuration=Release ConsoleApplication1.sln
-– mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe           
-./ConsoleApplication1.Test/bin/Release/ConsoleApplication1.Test.dll
