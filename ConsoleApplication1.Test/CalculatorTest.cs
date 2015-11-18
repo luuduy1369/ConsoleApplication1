@@ -26,7 +26,7 @@ namespace ConsoleApplication1.Test
         [Test]
         public void TwoPlusTwoEqualFour()
         {
-            Assert.AreEqual(4, _cal.Add(2, 2));
+            Assert.AreEqual(5, _cal.Add(2, 2));
         }
  
         [Test]
